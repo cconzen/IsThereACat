@@ -5,17 +5,13 @@ segmentation, outlines each one, and reports how many there are and roughly
 where they're located.
 
 The app runs [YOLOv8-seg](https://docs.ultralytics.com/tasks/segment/)
-(via the `ultralytics` package), a pretrained convolutional neural network
-that both detects objects and produces a pixel-level mask for each one. We
-filter its output to the COCO "cat" class, then use OpenCV to draw the mask
-outline, a bounding box, and a number on top of each detected cat, and
-compute a rough grid position (e.g. "top-left", "center") from each cat's
-bounding-box centroid.
+(via the `ultralytics` package), a pretrained CNN
+that both detects objects and produces a pixel-level mask for each one.
 
 ## Run it locally
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/cconzen/IsThereACat
 cd cat-finder
 python -m venv .venv && source .venv/bin/activate   # optional but recommended
 pip install -r requirements.txt
