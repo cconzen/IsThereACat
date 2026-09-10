@@ -8,6 +8,10 @@ The app runs [YOLOv8-seg](https://docs.ultralytics.com/tasks/segment/)
 (via the `ultralytics` package), a pretrained CNN
 that both detects objects and produces a pixel-level mask for each one.
 
+## Run it online
+
+Check out the app [here](https://isthereacat.streamlit.app/).
+
 ## Run it locally
 
 ```bash
