@@ -1,0 +1,19 @@
+[server]
+enableStaticServing = true
+
+[[theme.fontFaces]]
+family="gambarino"
+url="app/static/Gambarino-Regular.ttf"
+style="normal"
+weight=400
+
+[theme]
+base="light"
+primaryColor="#1b59dd"
+#backgroundColor="#caa9f3"
+#backgroundColor="#174b4c"
+backgroundColor="#f8e8ff"
+secondaryBackgroundColor="#fff9"
+baseRadius="full"
+font = "gambarino"
+textColor = "#201a33"

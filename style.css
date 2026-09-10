@@ -1,0 +1,110 @@
+/* Let the animated canvas behind the iframe show through every
+   Streamlit layer that would otherwise paint over it. */
+.stApp, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {{
+    background: transparent !important;
+}}
+
+.block-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+    letter-spacing: 0.03em;
+    #color: #0E155E !important; /*843C9F*/
+    #color: #105666 !important; /*843C9F*/
+    color: #1b59dd !important; /*843C9F*/
+    #color: #D7520A !important; /*843C9F*/
+}
+
+.block-subtitle {
+    text-align: center;
+    #font-style: italic;
+    color: #201a33;
+    font-size: 1.05rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1.4rem;
+}
+
+.ornament {
+    text-align: center;
+    color: #1b59dd;
+    font-size: 1.3rem;
+    letter-spacing: 0.6em;
+    margin: 0.2rem 0 1.6rem 0;
+}
+
+.entry {
+    border-left: 3px solid #1b59dd;
+    padding: 0.35rem 0 0.35rem 1rem;
+    margin: 0.6rem 0;
+    font-size: 1.08rem;
+    line-height: 1.5;
+}
+
+.entry .num {
+    font-weight: 700;
+    color: #1b59dd;
+    margin-right: 0.3rem;
+}
+
+.verdict {
+    font-size: 1.5rem;
+    #font-style: italic;
+    text-align: center;
+    margin: 1.2rem 0 0.6rem 0;
+    color: #241a14;
+}
+
+[data-testid="stFileUploader"] {
+    border: 1.5px dashed #0054a3;
+    border-radius: 2px;
+    padding: 0.6rem;
+    #background-color: #7ab0de;
+}
+
+.stButton>button, .stDownloadButton>button {
+    background-color: #1b59dd;
+    color: #faf6ee;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 0.5rem 1.4rem;
+}
+
+.stButton>button:hover, .stDownloadButton>button:hover {
+    background-color: #7ab0de !important;
+    color: #faf6ee !important;
+}
+
+.caption-line {
+    text-align: center;
+    font-style: italic;
+    color: #201a33;
+    font-size: 0.95rem;
+    margin-top: -0.4rem;
+}
+
+div:has(> div.stDownloadButton) {
+    align-self: center;
+}
+
+.stAppHeader {
+    background-color: transparent;
+}
+
+.stPopover {
+    z-index: 34567890;
+    border: none;
+    background: none;
+}
+
+.stPopover > div > button {
+    border: none;
+    background: none;
+}
+
+[data-testid="stPopoverBody"] {
+    background-color: #FFB3DE !important;
+    border: 2px solid #1b59dd;
+}
